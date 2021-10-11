@@ -35,4 +35,14 @@ class HelpCentre
     {
         return 'https://play-lh.googleusercontent.com/uAJFBB9xW4rHYiJF5Frhlzh_XMK_JFEB7dhy08ukI1b9dfCg_29G3hTJoQ4L6EEYtw=s360-rw';
     }
+
+    /**
+     * Get the Google Tag Manager ID.
+     *
+     * @return string
+     */
+    public function gtmId(): string
+    {
+        return env('GTM_ID', null);
+    }
 }
