@@ -51,7 +51,7 @@ export default {
             this.searching = true
 
             axios
-                .get('/search', {
+                .get('/help/search', {
                     params: { query }
                 })
                 .then(response => this.results = response.data.data)
