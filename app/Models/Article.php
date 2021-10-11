@@ -132,7 +132,7 @@ class Article extends Model
      */
     public function getMarkdownContentAttribute(): string
     {
-        return $this->formatContent();
+        return (string) $this->formatContent();
     }
 
     /**
