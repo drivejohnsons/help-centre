@@ -128,11 +128,11 @@ class Article extends Model
     /**
      * Return the formatted markdown content.
      *
-     * @return string
+     * @return string|null
      */
     public function getMarkdownContentAttribute(): string
     {
-        return (string) $this->formatContent();
+        return $this->formatContent()->toHtml();
     }
 
     /**
