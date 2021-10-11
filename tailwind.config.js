@@ -1,9 +1,14 @@
 module.exports = {
-  purge: [
-      './resources/**/*.blade.php',
-      './resources/**/*.js',
-      './resources/**/*.vue',
-  ],
+  purge: {
+      content: [
+          './resources/**/*.blade.php',
+          './resources/**/*.js',
+          './resources/**/*.vue',
+      ],
+      safelist: [
+          'p-4',
+      ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
