@@ -7,6 +7,8 @@ module.exports = {
       ],
       safelist: [
           'p-4',
+          'border-l-4',
+          'border-gray-300',
       ],
   },
   darkMode: false, // or 'media' or 'class'
