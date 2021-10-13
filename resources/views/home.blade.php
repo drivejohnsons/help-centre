@@ -14,7 +14,7 @@
                     <picture>
                         <source srcset="{{ asset('/images/mini-countryman-model.webp') }}" type="image/webp">
                         <source srcset="{{ asset('/images/mini-countryman-model-tiny.png') }}" type="image/png">
-                        <img src="{{ asset('/images/mini-countryman-model-tiny.png') }}" alt="Mini Countryman Model" class="w-full h-auto" loading="lazy" width="421" height="263">
+                        <img src="{{ asset('/images/mini-countryman-model-tiny.png') }}" alt="Mini Countryman Model" class="w-full h-auto" width="421" height="263">
                     </picture>
                 </div>
             </div>
