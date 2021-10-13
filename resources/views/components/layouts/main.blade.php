@@ -7,6 +7,8 @@
     <title>{{ $title }}</title>
     <meta name="description" content="{{ $description ?? null }}">
     <link rel="preconnect" href="https://assets.drivejohnsons.co.uk">
+    <link rel="preload" href="{{ asset(mix('/css/app.css')) }}">
+    <link rel="preload" href="{{ asset(mix('/js/app.js')) }}">
     <link rel="stylesheet" href="{{ asset(mix('/css/app.css')) }}">
     <script src="{{ asset(mix('/js/app.js')) }}" defer></script>
     {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
