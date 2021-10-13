@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
     <meta name="description" content="{{ $description ?? null }}">
+    <link rel="preconnect" href="https://assets.drivejohnsons.co.uk">
     <link rel="stylesheet" href="{{ asset(mix('/css/app.css')) }}">
     <script src="{{ asset(mix('/js/app.js')) }}" defer></script>
     {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
