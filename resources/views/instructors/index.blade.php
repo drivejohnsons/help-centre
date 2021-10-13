@@ -3,7 +3,7 @@
         <div class="max-w-7xl px-8 mx-auto">
             <div class="md:flex md:items-center md:space-x-16">
                 <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0 rounded-md overflow-hidden relative">
-                    <img src="{{ HelpCentre::instructorsIcon() }}" alt="Instructor Portal Icon" class="min-w-full min-h-full object-cover object-center">
+                    <img src="{{ HelpCentre::instructorsIcon() }}" alt="Instructor Portal Icon" class="min-w-full min-h-full object-cover object-center" width="160" height="160">
                 </div>
                 <div class="mt-10 md:mt-0 md:flex-1">
                     <h1 class="text-6xl font-bold text-gray-900">
