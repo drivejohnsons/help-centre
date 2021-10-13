@@ -14,7 +14,7 @@
                     <picture>
                         <source srcset="{{ asset('/images/mini-countryman-model.webp') }}" type="image/webp">
                         <source srcset="{{ asset('/images/mini-countryman-model-tiny.png') }}" type="image/png">
-                        <img src="{{ asset('/images/mini-countryman-model-tiny.png') }}" alt="Mini Countryman Model" class="w-full h-auto">
+                        <img src="{{ asset('/images/mini-countryman-model-tiny.png') }}" alt="Mini Countryman Model" class="w-full h-auto" loading="lazy">
                     </picture>
                 </div>
             </div>
@@ -27,7 +27,10 @@
                     <span class="flex items-center space-x-6">
                         <img src="{{ HelpCentre::learnersIcon() }}"
                              alt="driveJohnson's Learners Icon"
-                             class="w-20 h-20 rounded-md">
+                             class="w-20 h-20 rounded-md"
+                             width="80"
+                             height="80"
+                             loading="lazy">
                         <span class="flex-1 flex items-center space-x-2 text-left">
                             <span class="text-gray-500 dark:text-gray-300 block text-3xl">
                                 For
@@ -43,7 +46,10 @@
                     <span class="flex items-center space-x-6">
                         <img src="{{ HelpCentre::instructorsIcon() }}"
                              alt="driveJohnson's Instructor Portal Icon"
-                             class="w-20 h-20 rounded-md">
+                             class="w-20 h-20 rounded-md"
+                             width="80"
+                             height="80"
+                             loading="lazy">
                         <span class="flex-1 flex items-center space-x-2 text-left">
                             <span class="text-gray-500 dark:text-gray-300 block text-3xl">
                                 For
