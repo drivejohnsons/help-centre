@@ -6,7 +6,7 @@
                     <img src="{{ HelpCentre::learnersIcon() }}" alt="Instructor Portal Icon" class="min-w-full min-h-full object-cover object-center" width="160" height="160">
                 </div>
                 <div class="mt-10 md:mt-0 md:flex-1">
-                    <h1 class="text-6xl font-bold text-gray-900">
+                    <h1 class="text-4xl sm:text-6xl font-bold text-gray-900">
                         drive<span class="text-brand-red">Johnson's</span> Learners Help
                     </h1>
                     <div class="mt-3">
