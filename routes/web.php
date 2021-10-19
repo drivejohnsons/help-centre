@@ -20,6 +20,7 @@ Route::get('/', function () {
         'latest' => Article::query()
             ->withTags()
             ->published()
+            ->latest()
             ->limit(3)
             ->get()
     ]);
