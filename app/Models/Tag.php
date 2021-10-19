@@ -14,6 +14,10 @@ class Tag extends Model
 
     protected $table = 'hc_tags';
 
+    protected $appends = [
+        'url',
+    ];
+
     /**
      * The articles which are associated with this tag.
      *
@@ -22,5 +26,15 @@ class Tag extends Model
     public function articles(): BelongsToMany
     {
         return $this->belongsToMany(Article::class, 'hc_article_tag');
+    }
+
+    /**
+     * Get the url for the tag.
+     *
+     * @return string
+     */
+    public function getUrlAttribute(): string
+    {
+        return secure_url("/tags/$this->name");
     }
 }
