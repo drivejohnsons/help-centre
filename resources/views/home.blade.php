@@ -32,10 +32,10 @@
                              height="80"
                              loading="lazy">
                         <span class="flex-1 flex items-center space-x-2 text-left">
-                            <span class="text-gray-500 dark:text-gray-300 block text-3xl">
+                            <span class="text-gray-500 dark:text-gray-300 block text-xl sm:text-3xl">
                                 For
                             </span>
-                            <span class="text-red-600 text-4xl font-bold">
+                            <span class="text-red-600 text-2xl sm:text-4xl font-bold">
                                 Learners
                             </span>
                         </span>
@@ -51,10 +51,10 @@
                              height="80"
                              loading="lazy">
                         <span class="flex-1 flex items-center space-x-2 text-left">
-                            <span class="text-gray-500 dark:text-gray-300 block text-3xl">
+                            <span class="text-gray-500 dark:text-gray-300 block text-xl sm:text-3xl">
                                 For
                             </span>
-                            <span class="text-red-600 text-4xl font-bold">
+                            <span class="text-red-600 text-2xl sm:text-4xl font-bold">
                                 Instructors
                             </span>
                         </span>
