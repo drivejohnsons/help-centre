@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Models\Article;
+use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,18 +51,29 @@ Route::get('/instructors', function () {
             ->published()
             ->latest()
             ->withTags()
-            ->paginate(12)
+            ->paginate(12),
     ]);
 });
 
 Route::get('/learners', function () {
     return view('learners.index', [
-    'articles' => Article::query()
-        ->learners()
-        ->published()
-        ->latest()
-        ->withTags()
-        ->paginate(12)
+        'articles' => Article::query()
+            ->learners()
+            ->published()
+            ->latest()
+            ->withTags()
+            ->paginate(12),
+    ]);
+});
+
+Route::get('/tags/{tag}', function (Tag $tag) {
+    return view('tags.show', [
+        'tag' => $tag,
+        'articles' => $tag->articles()
+            ->published()
+            ->latest()
+            ->withTags()
+            ->paginate(12),
     ]);
 });
 

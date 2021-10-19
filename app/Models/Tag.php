@@ -19,6 +19,16 @@ class Tag extends Model
     ];
 
     /**
+     * Get the tag's route key name.
+     *
+     * @return string
+     */
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
+
+    /**
      * The articles which are associated with this tag.
      *
      * @return BelongsToMany
@@ -35,6 +45,6 @@ class Tag extends Model
      */
     public function getUrlAttribute(): string
     {
-        return secure_url("/tags/$this->name");
+        return secure_url("/tags/$this->slug");
     }
 }
