@@ -48,6 +48,7 @@ Route::get('/instructors', function () {
         'articles' => Article::query()
             ->instructors()
             ->published()
+            ->latest()
             ->withTags()
             ->paginate(12)
     ]);
@@ -58,6 +59,7 @@ Route::get('/learners', function () {
     'articles' => Article::query()
         ->learners()
         ->published()
+        ->latest()
         ->withTags()
         ->paginate(12)
     ]);
