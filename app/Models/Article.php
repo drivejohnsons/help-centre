@@ -184,9 +184,7 @@ class Article extends Model
     public function scopeWithTags(Builder $query): Builder
     {
         return $query->with([
-            'tags' => function ($query) {
-                $query->limit(3);
-            }
+            'tags'
         ]);
     }
 

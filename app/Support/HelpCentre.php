@@ -19,9 +19,10 @@ class HelpCentre
     /**
      * Return the Learner's app icon URL.
      *
+     * @param string $ext
      * @return string
      */
-    public function learnersIcon($ext = 'jpg'): string
+    public function learnersIcon(string $ext = 'jpg'): string
     {
         return asset("/images/learners.$ext");
     }
@@ -29,9 +30,10 @@ class HelpCentre
     /**
      * Return the Instructors app icon URL.
      *
+     * @param string $ext
      * @return string
      */
-    public function instructorsIcon($ext = 'jpg'): string
+    public function instructorsIcon(string $ext = 'jpg'): string
     {
         return asset("/images/instructors.$ext");
     }
