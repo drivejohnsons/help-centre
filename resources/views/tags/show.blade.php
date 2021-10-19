@@ -4,7 +4,8 @@
             <div class="md:flex md:items-center md:space-x-16">
                 <div class="mt-10 md:mt-0 md:flex-1">
                     <h1 class="text-3xl sm:text-4xl font-medium text-gray-500">
-                        Articles tagged as <strong class="text-gray-900 text-5xl sm:text-6xl">{{ $tag->label }}</strong>
+                        <span class="block">Articles tagged as</span>
+                        <strong class="block text-gray-900 text-5xl sm:text-6xl">{{ $tag->label }}</strong>
                     </h1>
                 </div>
             </div>
