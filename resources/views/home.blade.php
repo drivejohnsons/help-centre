@@ -57,7 +57,7 @@
                             <span class="text-red-600 text-2xl sm:text-4xl font-bold">
                                 Instructors
                             </span>
-                        </span>8
+                        </span>
                     </span>
                 </a>
             </div>
