@@ -37,7 +37,7 @@ Route::get('/search', function () {
         })
         ->paginate(10);
 
-    $term = e(request('term'));
+    $term = e(request('query'));
     $title = "Search results for '$term'";
 
     if(request()->wantsJson()) {
