@@ -80,10 +80,10 @@
                         </div>
                         <ul class="mt-4 text-sm text-gray-400 space-y-3">
                             <li>
-                                <a href="#" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on App Store</a>
+                                <a href="https://apps.apple.com/gb/app/learners/id1530347448" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on App Store</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on Google Play</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.drivejohnsons.learners" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on Google Play</a>
                             </li>
                         </ul>
                     </div>
@@ -93,10 +93,10 @@
                         </div>
                         <ul class="mt-4 text-sm text-gray-400 space-y-3">
                             <li>
-                                <a href="#" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on App Store</a>
+                                <a href="https://apps.apple.com/gb/app/instructor-portal/id1363803428" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on App Store</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on Google Play</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.drivejohnsons.instructorportal" class="hover:text-gray-500 transition duration-150 ease-in-out">Download on Google Play</a>
                             </li>
                         </ul>
                     </div>
