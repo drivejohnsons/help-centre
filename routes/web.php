@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\SitemapController;
 use App\Models\Article;
 use App\Models\Tag;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,8 @@ Route::get('/', function () {
             ->get()
     ]);
 });
+
+Route::get('/sitemap', [SitemapController::class, 'index']);
 
 Route::get('/search', function () {
     $articles = Article::search(request('query'))

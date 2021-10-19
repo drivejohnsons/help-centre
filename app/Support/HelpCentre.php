@@ -2,6 +2,11 @@
 
 namespace App\Support;
 
+use App\Models\Article;
+use App\Models\Tag;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
+
 class HelpCentre
 {
 
@@ -46,5 +51,39 @@ class HelpCentre
     public function gtmId(): string
     {
         return env('GTM_ID', null);
+    }
+
+    /**
+     * Generate the sitemap of tags and articles.
+     *
+     * @return Sitemap
+     */
+    public function generateSitemap(): Sitemap
+    {
+        $sitemap = Sitemap::create();
+
+        $sitemap->add('/learners')
+            ->add('/instructors');
+
+        $tags = Tag::orderBy('label')->get();
+        $articles = Article::orderBy('title')->get();
+
+        foreach ($articles as $article) {
+            $sitemap->add(
+                Url::create($article->url)
+                    ->setLastModificationDate($article->updated_at)
+                    ->setPriority(0.8)
+            );
+        }
+
+        foreach ($tags as $tag) {
+            $sitemap->add(
+                Url::create($tag->url)
+                    ->setLastModificationDate($tag->updated_at)
+                    ->setPriority(0.6)
+            );
+        }
+
+        return $sitemap;
     }
 }
