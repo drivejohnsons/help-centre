@@ -1,4 +1,4 @@
-<x-layouts.main :title="HelpCentre::title('Home')">
+<x-layouts.main :title="HelpCentre::title('Help')">
     <section class="border-b border-gray-200 dark:border-gray-600">
         <div class="hero pb-10 md:pt-20 md:pb-32 px-8 max-w-7xl mx-auto">
             <div class="flex flex-wrap md:flex-no-wrap md:items-center md:space-x-16">
