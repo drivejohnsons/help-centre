@@ -13,8 +13,8 @@
                 <div class="mt-5 md:mt-0 w-full md:w-auto md:flex-1 flex items-center justify-end">
                     <picture>
                         <source srcset="{{ asset('/images/dj-mini.webp') }}" type="image/webp">
-                        <source srcset="{{ asset('/images/dj-mini.png') }}" type="image/png">
-                        <img src="{{ asset('/images/dj-mini.png') }}" alt="driveJohnson's Learner Car" class="w-full h-auto" width="421" height="263">
+                        <source srcset="{{ asset('/images/dj-mini.jpg') }}" type="image/jpeg">
+                        <img src="{{ asset('/images/dj-mini.jpg') }}" alt="driveJohnson's Learner Car" class="w-full h-auto" width="421" height="263">
                     </picture>
                 </div>
             </div>
