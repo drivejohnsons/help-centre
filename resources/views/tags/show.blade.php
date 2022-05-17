@@ -1,4 +1,4 @@
-<x-layouts.main :title="HelpCentre::title($tag->label)">
+<x-layouts.main :title="HelpCentre::title('Tag: ' . $tag->label)" :description="$tag->description">
     <section class="pt-10 pb-16 border-b border-gray-100">
         <div class="max-w-7xl px-8 mx-auto">
             <div class="md:flex md:items-center md:space-x-16">

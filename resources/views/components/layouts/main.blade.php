@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
+    @if(! empty($description ?? null))
     <meta name="description" content="{{ $description ?? null }}">
+    @endif
     <link rel="preconnect" href="https://assets.drivejohnsons.co.uk">
     <link rel="preload" href="{{ asset(mix('/css/app.css')) }}">
     <link rel="preload" href="{{ asset(mix('/js/app.js')) }}">
